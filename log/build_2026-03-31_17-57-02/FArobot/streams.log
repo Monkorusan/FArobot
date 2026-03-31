@@ -1,0 +1,28 @@
+[0.808s] Invoking command in '/home/monkorusan/ros2_ws/src/FArobot': PYTHONPATH=/home/monkorusan/ros2_ws/src/FArobot/build/FArobot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/FArobot build --build-base /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build install --record /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/install.log --single-version-externally-managed install_data
+[1.072s] running egg_info
+[1.073s] writing build/FArobot/FArobot.egg-info/PKG-INFO
+[1.073s] writing dependency_links to build/FArobot/FArobot.egg-info/dependency_links.txt
+[1.073s] writing entry points to build/FArobot/FArobot.egg-info/entry_points.txt
+[1.073s] writing requirements to build/FArobot/FArobot.egg-info/requires.txt
+[1.073s] writing top-level names to build/FArobot/FArobot.egg-info/top_level.txt
+[1.074s] reading manifest file 'build/FArobot/FArobot.egg-info/SOURCES.txt'
+[1.074s] adding license file 'LICENSE'
+[1.075s] writing manifest file 'build/FArobot/FArobot.egg-info/SOURCES.txt'
+[1.075s] running build
+[1.075s] running build_py
+[1.075s] copying FArobot/packing_demo_node.py -> /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot
+[1.075s] running install
+[1.075s] running install_lib
+[1.076s] copying /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot/packing_demo_node.py -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot
+[1.077s] byte-compiling /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot/packing_demo_node.py to packing_demo_node.cpython-310.pyc
+[1.078s] running install_data
+[1.078s] copying package.xml -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot
+[1.078s] copying config/boxes.yaml -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/config
+[1.078s] copying launch/packing_demo_ur5e_moveit.launch.py -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/launch
+[1.078s] running install_egg_info
+[1.080s] removing '/home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.080s] Copying build/FArobot/FArobot.egg-info to /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot-0.0.0-py3.10.egg-info
+[1.081s] running install_scripts
+[1.096s] Installing packing_demo_node script to /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/FArobot
+[1.096s] writing list of installed files to '/home/monkorusan/ros2_ws/src/FArobot/build/FArobot/install.log'
+[1.116s] Invoked command in '/home/monkorusan/ros2_ws/src/FArobot' returned '0': PYTHONPATH=/home/monkorusan/ros2_ws/src/FArobot/build/FArobot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/FArobot build --build-base /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build install --record /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/install.log --single-version-externally-managed install_data

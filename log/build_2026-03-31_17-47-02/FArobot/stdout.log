@@ -1,0 +1,22 @@
+running egg_info
+writing build/FArobot/FArobot.egg-info/PKG-INFO
+writing dependency_links to build/FArobot/FArobot.egg-info/dependency_links.txt
+writing entry points to build/FArobot/FArobot.egg-info/entry_points.txt
+writing requirements to build/FArobot/FArobot.egg-info/requires.txt
+writing top-level names to build/FArobot/FArobot.egg-info/top_level.txt
+reading manifest file 'build/FArobot/FArobot.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/FArobot/FArobot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying config/packing_demo.rviz -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/config
+copying launch/packing_demo.launch.py -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/launch
+running install_egg_info
+removing '/home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/FArobot/FArobot.egg-info to /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing packing_demo_node script to /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/FArobot
+writing list of installed files to '/home/monkorusan/ros2_ws/src/FArobot/build/FArobot/install.log'

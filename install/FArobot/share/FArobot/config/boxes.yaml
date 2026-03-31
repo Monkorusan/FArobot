@@ -1,0 +1,23 @@
+bin:
+  size: [0.6, 0.4, 0.3]
+  origin: [0.0, 0.0, 0.0]
+
+source:
+  origin: [-0.4, -0.2, 0.05]
+  spacing: [0.12, 0.12]
+  cols: 3
+  rows: 2
+
+boxes:
+  - id: box_01
+    size: [0.2, 0.2, 0.1]
+  - id: box_02
+    size: [0.25, 0.2, 0.1]
+  - id: box_03
+    size: [0.15, 0.2, 0.1]
+  - id: box_04
+    size: [0.1, 0.1, 0.1]
+  - id: box_05
+    size: [0.2, 0.15, 0.1]
+  - id: box_06
+    size: [0.18, 0.12, 0.1]

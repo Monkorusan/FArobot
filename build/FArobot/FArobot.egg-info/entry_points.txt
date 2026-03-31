@@ -1,0 +1,3 @@
+[console_scripts]
+packing_demo_node = FArobot.packing_demo_node:main
+

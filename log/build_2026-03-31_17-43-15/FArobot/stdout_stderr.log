@@ -1,0 +1,43 @@
+running egg_info
+creating build/FArobot/FArobot.egg-info
+writing build/FArobot/FArobot.egg-info/PKG-INFO
+writing dependency_links to build/FArobot/FArobot.egg-info/dependency_links.txt
+writing entry points to build/FArobot/FArobot.egg-info/entry_points.txt
+writing requirements to build/FArobot/FArobot.egg-info/requires.txt
+writing top-level names to build/FArobot/FArobot.egg-info/top_level.txt
+writing manifest file 'build/FArobot/FArobot.egg-info/SOURCES.txt'
+reading manifest file 'build/FArobot/FArobot.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/FArobot/FArobot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build
+creating /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib
+creating /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot
+copying FArobot/__init__.py -> /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot
+copying FArobot/packing.py -> /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot
+copying FArobot/packing_demo_node.py -> /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot
+running install
+running install_lib
+creating /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot
+copying /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot/__init__.py -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot
+copying /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot/packing.py -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot
+copying /home/monkorusan/ros2_ws/src/FArobot/build/FArobot/build/lib/FArobot/packing_demo_node.py -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot
+byte-compiling /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot/packing.py to packing.cpython-310.pyc
+byte-compiling /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot/packing_demo_node.py to packing_demo_node.cpython-310.pyc
+running install_data
+creating /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/ament_index
+creating /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/ament_index/resource_index
+creating /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/ament_index/resource_index/packages
+copying resource/FArobot -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/ament_index/resource_index/packages
+copying package.xml -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot
+creating /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/config
+copying config/boxes.yaml -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/config
+creating /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/launch
+copying launch/packing_demo.launch.py -> /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/share/FArobot/launch
+running install_egg_info
+Copying build/FArobot/FArobot.egg-info to /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/python3.10/site-packages/FArobot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing packing_demo_node script to /home/monkorusan/ros2_ws/src/FArobot/install/FArobot/lib/FArobot
+writing list of installed files to '/home/monkorusan/ros2_ws/src/FArobot/build/FArobot/install.log'
