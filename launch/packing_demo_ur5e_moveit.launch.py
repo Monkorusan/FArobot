@@ -217,6 +217,7 @@ def generate_launch_description() -> LaunchDescription:
                     {"auto_start": True},
                     {"execution_mode": "simulate"},
                     {"enable_attach": False},
+                    {"max_boxes": 1},
                     robot_description,
                     robot_description_semantic,
                     robot_description_kinematics,

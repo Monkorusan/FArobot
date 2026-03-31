@@ -51,6 +51,7 @@ class PickPlaceExecutor(Node):
         self.declare_parameter("tool_orientation_rpy", [3.1416, 0.0, 0.0])
         self.declare_parameter("min_goal_z", 0.1)
         self.declare_parameter("execution_mode", "simulate")
+        self.declare_parameter("max_boxes", 1)
         self.declare_parameter(
             "joint_names",
             [
@@ -93,6 +94,7 @@ class PickPlaceExecutor(Node):
         )
         self._min_goal_z = self.get_parameter("min_goal_z").get_parameter_value().double_value
         self._execution_mode = self.get_parameter("execution_mode").get_parameter_value().string_value
+        self._max_boxes = self.get_parameter("max_boxes").get_parameter_value().integer_value
         self._joint_names = list(
             self.get_parameter("joint_names").get_parameter_value().string_array_value
         )
@@ -164,7 +166,7 @@ class PickPlaceExecutor(Node):
             self._init_planning_scene()
 
         self._started = True
-        count = min(len(self._pick_poses), len(self._place_poses))
+        count = min(len(self._pick_poses), len(self._place_poses), int(self._max_boxes))
         self.get_logger().info("Starting pick/place sequence for %d boxes" % count)
 
         for index in range(count):
