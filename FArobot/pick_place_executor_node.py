@@ -52,6 +52,8 @@ class PickPlaceExecutor(Node):
         self.declare_parameter("min_goal_z", 0.1)
         self.declare_parameter("execution_mode", "simulate")
         self.declare_parameter("max_boxes", 1)
+        self.declare_parameter("place_override_xyz", [0.0, 0.0, 0.0])
+        self.declare_parameter("enable_place_override", False)
         self.declare_parameter(
             "joint_names",
             [
@@ -95,6 +97,12 @@ class PickPlaceExecutor(Node):
         self._min_goal_z = self.get_parameter("min_goal_z").get_parameter_value().double_value
         self._execution_mode = self.get_parameter("execution_mode").get_parameter_value().string_value
         self._max_boxes = self.get_parameter("max_boxes").get_parameter_value().integer_value
+        self._place_override = list(
+            self.get_parameter("place_override_xyz").get_parameter_value().double_array_value
+        )
+        self._enable_place_override = (
+            self.get_parameter("enable_place_override").get_parameter_value().bool_value
+        )
         self._joint_names = list(
             self.get_parameter("joint_names").get_parameter_value().string_array_value
         )
@@ -172,6 +180,10 @@ class PickPlaceExecutor(Node):
         for index in range(count):
             pick = self._apply_pose_defaults(self._pick_poses[index])
             place = self._apply_pose_defaults(self._place_poses[index])
+            if self._enable_place_override and len(self._place_override) == 3:
+                place.position.x = float(self._place_override[0])
+                place.position.y = float(self._place_override[1])
+                place.position.z = float(self._place_override[2])
 
             approach_pick = self._offset_pose(pick, self._offsets.approach)
             lift_pick = self._offset_pose(pick, self._offsets.lift)

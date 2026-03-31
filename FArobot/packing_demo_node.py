@@ -25,10 +25,12 @@ class PackingDemoNode(Node):
         self.declare_parameter("config", default_yaml)
         self.declare_parameter("frame_id", "world")
         self.declare_parameter("publish_rate_hz", 1.0)
+        self.declare_parameter("show_bin", True)
 
         yaml_path = self.get_parameter("config").get_parameter_value().string_value
         self._frame_id = self.get_parameter("frame_id").get_parameter_value().string_value
         publish_rate = self.get_parameter("publish_rate_hz").get_parameter_value().double_value
+        self._show_bin = self.get_parameter("show_bin").get_parameter_value().bool_value
 
         self._config = load_config(yaml_path)
         self._placements, self._unplaced = plan_packing(self._config.bin_spec, self._config.boxes)
@@ -47,7 +49,8 @@ class PackingDemoNode(Node):
 
     def _publish_markers(self) -> None:
         marker_array = MarkerArray()
-        marker_array.markers.extend(self._create_bin_marker())
+        if self._show_bin:
+            marker_array.markers.extend(self._create_bin_marker())
         marker_array.markers.extend(self._create_box_markers(self._placements))
         marker_array.markers.extend(self._create_pick_markers(self._pick_poses))
         self._publisher.publish(marker_array)

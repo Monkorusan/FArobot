@@ -200,6 +200,7 @@ def generate_launch_description() -> LaunchDescription:
                     {"config": default_config},
                     {"frame_id": "base_link"},
                     {"publish_rate_hz": 1.0},
+                    {"show_bin": False},
                 ],
             ),
             Node(
@@ -218,6 +219,8 @@ def generate_launch_description() -> LaunchDescription:
                     {"execution_mode": "simulate"},
                     {"enable_attach": False},
                     {"max_boxes": 1},
+                    {"enable_place_override": True},
+                    {"place_override_xyz": [-0.5, -0.5, 0.05]},
                     robot_description,
                     robot_description_semantic,
                     robot_description_kinematics,
